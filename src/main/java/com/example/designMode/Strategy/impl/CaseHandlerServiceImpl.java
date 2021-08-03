@@ -17,4 +17,9 @@ public class CaseHandlerServiceImpl implements CaseHandler{
     public void getCaseStatus() throws Exception {
         caseApplication.sendStrategy(ECaseStatus.THREECASE.getKey());
     }
+
+    @Override
+    public void getYiBanCaseStatus() throws Exception {
+        caseApplication.sendStrategy(ECaseStatus.YIBAN.getKey());
+    }
 }

@@ -5,8 +5,14 @@ package com.example.designMode.Strategy;
  */
 public interface CaseHandler {
     /**
-     * 获取不同的渠道的指令状态
+     * 获取三方的渠道的指令状态
      * @throws Exception
      */
     void getCaseStatus() throws Exception;
+
+    /**
+     * 获取一般渠道
+     * @throws Exception
+     */
+    void getYiBanCaseStatus() throws Exception;
 }
