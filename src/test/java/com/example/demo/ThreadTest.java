@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import com.example.designMode.testThreadLocal.MyThread;
+import com.example.designMode.testThreadLocal.MyThreadLocal;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +9,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
@@ -16,6 +19,7 @@ public class ThreadTest {
     
     @Autowired
     private MyThread myThread;
+
 
 
     /**
@@ -26,6 +30,15 @@ public class ThreadTest {
         for (int i = 0; i < 3; i++) {
             List<String> data = init(i);
             myThread.getThread(data);
+        }
+        MyThreadLocal.removeThreadLocal();
+    }
+
+    @Test
+    public void test1(){
+        String num = "2";
+        for (int i = 0; i < 3; i++) {
+            myThread.getHaveLocal(num,i);
         }
     }
     
