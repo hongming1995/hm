@@ -17,12 +17,13 @@ public class ThreadPoolInit implements ApplicationRunner {
         MyThreadPool.threadMap.put("pms", MyThreadPool.getPool());
     }
 
-    public void getInitPool(String key, ThreadBody threadBody) {
+    public ThreadPoolExecutor getInitPool(String key, ThreadBody threadBody) {
         ThreadPoolExecutor threadPoolExecutor = MyThreadPool.threadMap.get(key);
         //threadPoolExecutor.allowCoreThreadTimeOut(true);
         threadPoolExecutor.setRejectedExecutionHandler(new MyRejectedExecutionHandler());
         //threadPoolExecutor.setRejectedExecutionHandler(new ThreadPoolExecutor.DiscardPolicy());
         threadPoolExecutor.submit(threadBody.getRunnable());
+        return threadPoolExecutor;
     }
 
 }
