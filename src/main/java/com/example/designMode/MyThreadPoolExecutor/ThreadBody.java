@@ -24,17 +24,17 @@ public class ThreadBody {
     /**
      *核心线程数
      */
-    public static int corePoolSize = 1;
+    public static int corePoolSize = 10;
 
     /**
      * 最大线程数量
      */
-    public static int maximumPoolSize = 500;
+    public static int maximumPoolSize = 100;
 
     /**
      * 线程多长空闲时间存活
      */
-    public static long keepAliveTime = 1;
+    public static long keepAliveTime = 0;
 
     public ThreadBody(String threadId, String threadName, Runnable runnable) {
         this.threadId = threadId;
