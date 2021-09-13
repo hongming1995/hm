@@ -24,4 +24,11 @@ public class MyServletContextGetAttri {
         System.out.println("获取共享参数= " + id);
         return id;
     }
+
+    @RequestMapping("/getUser")
+    @ResponseBody
+    public String getValue(HttpServletRequest request) {
+        String userId = request.getParameter("userId");
+        return userId;
+    }
 }
