@@ -1,10 +1,9 @@
-package com.example.spring.my_webApplicationcontext;
+package com.example.spring.my_webApplicationContextAware;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Service;
-import org.springframework.web.context.WebApplicationContext;
 
 @Service
 public class ApplicationContextUtil implements ApplicationContextAware {

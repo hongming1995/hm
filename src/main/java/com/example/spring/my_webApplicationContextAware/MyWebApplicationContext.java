@@ -1,12 +1,7 @@
-package com.example.spring.my_webApplicationcontext;
+package com.example.spring.my_webApplicationContextAware;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
-import org.springframework.web.context.support.WebApplicationContextUtils;
-
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
 
 @Service
 public class MyWebApplicationContext {

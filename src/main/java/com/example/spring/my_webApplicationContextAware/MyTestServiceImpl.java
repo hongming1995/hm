@@ -1,4 +1,4 @@
-package com.example.spring.my_webApplicationcontext;
+package com.example.spring.my_webApplicationContextAware;
 
 import org.springframework.stereotype.Service;
 
