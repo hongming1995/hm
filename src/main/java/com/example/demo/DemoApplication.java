@@ -3,6 +3,7 @@ package com.example.demo;
 import com.example.designMode.Strategy.CaseHandler;
 import com.example.designMode.Strategy.impl.CaseHandlerServiceImpl;
 import com.example.my_application_listener.FiveListenerService;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,6 +13,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.example"})
+@MapperScan("com.example")
 public class DemoApplication {
 
 	public static void main(String[] args){
