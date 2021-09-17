@@ -13,7 +13,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.example"})
-@MapperScan("com.example")
+@MapperScan("com.example.mapper")
 public class DemoApplication {
 
 	public static void main(String[] args){

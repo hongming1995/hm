@@ -29,7 +29,7 @@ public class MyBatisUserTest {
         User user = new User();
         user.setPkId(UUID.randomUUID().toString());
         user.setUserId(DateToStringUtil.getDateString(new Date()));
-        user.setUserName("张三");
+        user.setUserName("李四");
         user.setSex("男");
         Integer count = userMyBatisService.insert(user);
         System.out.println("操作" + (count > 0 ? "成功" : "失败"));

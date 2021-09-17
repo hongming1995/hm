@@ -1,4 +1,4 @@
-package com.example.my_batis;
+package com.example.mapper.user_mybatis;
 
 
 import com.example.my_batis.model.User;
