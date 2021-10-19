@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.*;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 class DemoApplicationTests {
@@ -17,6 +19,8 @@ class DemoApplicationTests {
 	@Test
 	void test() throws Exception{
 		caseHandler.getCaseStatus();
+		Map map = new HashMap();
+		map.put("1",1);
 	}
 
 	@Test
