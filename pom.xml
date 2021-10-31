@@ -75,6 +75,14 @@
 			<version>8.0.26</version>
 			<scope>runtime</scope>
 		</dependency>
+
+		<!-- redis连接工具类jedis -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
