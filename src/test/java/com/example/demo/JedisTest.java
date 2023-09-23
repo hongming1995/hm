@@ -18,9 +18,13 @@ public class JedisTest {
 
     @Test
     public void singleJedis() {
+        // String 类型
         Jedis jedis = JedisUtil.singleJedis();
         jedis.set("name", "hm");
         jedis.set("age", "25");
         System.out.println(jedis.get("name"));
+
+        // map类型
+
     }
 }
