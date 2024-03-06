@@ -9,6 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
 import java.util.logging.Logger;
 
 /**
@@ -64,5 +65,12 @@ public class MyJdbcConnection {
     public static void main(String[] args) {
         List<User> list = getSelectOne("643093d2-5177-446a-9545-604304935614");
         System.out.println(list.toString());
+
+        Thread thread = new Thread(){
+            @Override
+            public void run() {
+                System.out.println("执行线程");
+            }
+        };
     }
 }
