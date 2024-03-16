@@ -1,5 +1,8 @@
 package com.example.my_servletContext;
 
+import com.example.spring.my_webApplicationContextAware.ApplicationContextUtil;
+import org.apache.naming.factory.BeanFactory;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
