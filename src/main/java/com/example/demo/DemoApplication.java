@@ -18,10 +18,6 @@ public class DemoApplication {
 	public static void main(String[] args){
 
 		SpringApplication.run(DemoApplication.class, args);
-		/*SpringApplication springApplication = new SpringApplication();
-		FiveListenerService fiveListenerService = new FiveListenerService();
-		springApplication.addListeners(fiveListenerService);
-		springApplication.run(DemoApplication.class, args);*/
 	}
 
 }
