@@ -1,1 +1,0 @@
-org.springframework.context.ApplicationListener=com.example.my_application_listener.FactoriesListenerService
