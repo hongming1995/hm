@@ -1,4 +1,4 @@
-package com.example.MyThreadPool;
+package com.example.thread.MyThreadPool;
 
 /**
  * @Author: hongming

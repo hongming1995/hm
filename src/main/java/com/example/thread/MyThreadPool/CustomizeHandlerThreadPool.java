@@ -1,7 +1,7 @@
-package com.example.MyThreadPool;
+package com.example.thread.MyThreadPool;
 
-import com.example.MyRejectedExecutionHandler.MyRejectedExecutionHandler;
-import com.example.simpleThread.MyWorkPoolThread;
+import com.example.thread.MyRejectedExecutionHandler.MyRejectedExecutionHandler;
+import com.example.thread.simpleThread.MyWorkPoolThread;
 
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;

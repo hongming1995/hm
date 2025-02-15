@@ -1,4 +1,4 @@
-package com.example.simpleThread;
+package com.example.thread.simpleThread;
 
 /**
  * @Author: hongming

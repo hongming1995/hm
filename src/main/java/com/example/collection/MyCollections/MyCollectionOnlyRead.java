@@ -1,4 +1,4 @@
-package com.example.javabase;
+package com.example.collection.MyCollections;
 
 import java.util.ArrayList;
 import java.util.Collection;

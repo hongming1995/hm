@@ -1,4 +1,4 @@
-package com.example.MyThreeThread;
+package com.example.thread.MyThreeThread;
 
 
 /**

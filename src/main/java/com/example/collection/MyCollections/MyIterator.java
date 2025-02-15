@@ -1,4 +1,4 @@
-package com.example.javabase;
+package com.example.collection.MyCollections;
 
 import org.apache.commons.lang3.StringUtils;
 

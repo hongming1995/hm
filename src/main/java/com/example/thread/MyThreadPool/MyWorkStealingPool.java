@@ -1,10 +1,9 @@
-package com.example.MyThreadPool;
+package com.example.thread.MyThreadPool;
 
-import com.example.simpleThread.MyWorkPoolThread;
+import com.example.thread.simpleThread.MyWorkPoolThread;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 /**
