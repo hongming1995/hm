@@ -20,7 +20,6 @@ public class MyWorkStealingPool {
         }
         //关闭线程池，并等待线程池执行完成
         executorService.shutdown();
-        executorService.shutdownNow();
 
         try {
             // 主线程等待（如果主线程不等待，JVM会在非主线程结束后立即结束，控制台则输出不了打印信息）

@@ -24,5 +24,16 @@ public class CustomizeHandlerThreadPool {
         for (int i = 0; i < 12; i++) {
             thread.execute(new MyWorkPoolThread(i + 1));
         }
+
+        //关闭线程池，并等待线程池执行完成
+        thread.shutdown();
+
+        try {
+            // 主线程等待（如果主线程不等待，JVM会在非主线程结束后立即结束，控制台则输出不了打印信息）
+            thread.awaitTermination(15, TimeUnit.SECONDS);
+        }catch (InterruptedException e) {
+            // 线程中断
+            Thread.currentThread().interrupt();
+        }
     }
 }
