@@ -1,6 +1,6 @@
-package com.example.thread.MyThreadPool;
+package com.example.javabase.thread.poolHandler.MyRejectedExecutionHandler;
 
-import com.example.thread.simpleThread.MyWorkPoolThread;
+import com.example.javabase.thread.threadBean.MyWorkPoolThread;
 
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -8,19 +8,19 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @Author: hongming
- * @Date: 2025/02/13/20:15
- * @Description: 创建ThreadPoolExecutor线程池，使用默认的拒绝策略：AbortPolicy
+ * @Date: 2025/02/13/21:03
+ * @Description: 自定义拒绝策略ThreadPoolExecutor线程池
  */
-public class MyThreadPoolExecutors {
+public class CustomizeHandlerThreadPool {
     public static void main(String[] args) {
         ThreadPoolExecutor thread = new ThreadPoolExecutor(3,
                 10,
                 60,
                 TimeUnit.SECONDS,
                 new SynchronousQueue<>(),
-                new ThreadPoolExecutor.AbortPolicy());
+                new MyRejectedExecutionHandler());
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 12; i++) {
             thread.execute(new MyWorkPoolThread(i + 1));
         }
 

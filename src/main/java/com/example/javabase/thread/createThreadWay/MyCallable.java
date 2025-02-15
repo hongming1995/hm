@@ -1,4 +1,4 @@
-package com.example.thread.MyThreeThread;
+package com.example.javabase.thread.createThreadWay;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

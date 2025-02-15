@@ -1,4 +1,4 @@
-package com.example.thread.MyThreeThread;
+package com.example.javabase.thread.createThreadWay;
 
 /**
  * @Author: hongming

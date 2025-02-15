@@ -1,4 +1,4 @@
-package com.example.thread.MyRejectedExecutionHandler;
+package com.example.javabase.thread.poolHandler.MyRejectedExecutionHandler;
 
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;

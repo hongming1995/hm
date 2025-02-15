@@ -1,4 +1,4 @@
-package com.example.thread.simpleThread;
+package com.example.javabase.thread.threadBean;
 
 /**
  * @Author: hongming

@@ -1,4 +1,4 @@
-package com.example.thread.MyThreadPool;
+package com.example.javabase.thread.MyThreadPool;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;

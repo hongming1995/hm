@@ -1,6 +1,6 @@
-package com.example.thread.MyThreadPool;
+package com.example.javabase.thread.MyThreadPool;
 
-import com.example.thread.simpleThread.MyWorkPoolThread;
+import com.example.javabase.thread.threadBean.MyWorkPoolThread;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
